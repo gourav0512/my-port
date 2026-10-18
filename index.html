@@ -1,1 +1,149 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | B.Tech CSE Student</title>
+  <meta name="description" content="Portfolio of Your Name, a third-year B.Tech student building web and AI projects.">
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">Gourav Yadav</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Switch colour theme">Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Gourav Yadav</h1>
+        <p class="role">Third-year B.Tech student who builds web apps and AI-powered tools.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+      <aside class="status" aria-label="What I am building now">
+        <h2>Currently building</h2>
+        <ul>
+          <li>Goal Based Planner Using AI</li>
+          <li>Smart Study Planner Using AI</li>
+          <li>Packaged Food Health Analyzer</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>I am a third-year B.Tech student who enjoys turning everyday problems into working software. I like frontend work with HTML, CSS and JavaScript, and I am learning how to add AI to apps so they can plan, analyse and help people decide.</p>
+      <p>I am looking for internships where I can learn from a team and ship real features.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Web</h3>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li></ul>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <ul class="tags"><li>C</li><li>C++</li><li>Python</li><li>Data structures</li></ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul class="tags"><li>Git and GitHub</li><li>VS Code</li><li>MySQL</li></ul>
+        </div>
+      </div>
+      <p class="note">Currently learning Ai integration</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Packaged Food Health Analyzer</h3>
+          <p>Checks the ingredients and nutrition on packaged food and tells you how healthy it is.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Code</a><a href="#" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+        <article class="project">
+          <h3>Smart Study Planner Using AI</h3>
+          <p>Builds a study schedule around your subjects, deadlines and free time.</p>
+          <ul class="tags"><li>AI</li><li>Planning</li><li>Web app</li></ul>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Code</a><a href="#" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+        <article class="project">
+          <h3>Goal Based Planner Using AI</h3>
+          <p>Breaks a big goal into smaller tasks with dates, so you know what to do next.</p>
+          <ul class="tags"><li>AI</li><li>Goal tracking</li><li>Web app</li></ul>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Code</a><a href="#" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p>Lloyd Institute of Engineering And Technology, 3rd year</p>
+        </li>
+        <li>
+          <h3>Class 12</h3>
+          <p>Navjyoti Senior Secondary Public School, RBSE With 72%</p>
+        </li>
+        <li>
+          <h3>Class 10</h3>
+          <p>Navjyoti Senior Secondary Public School, RBSE With 88%</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact me</h2>
+      <p>Send a message and your email app will open with it ready to send.</p>
+      <form id="contactForm" class="form">
+        <label>Your name
+          <input type="text" id="name" required autocomplete="name">
+        </label>
+        <label>Your email
+          <input type="email" id="email" required autocomplete="email">
+        </label>
+        <label>Message
+          <textarea id="message" rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+      <p class="social">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Gourav Yadav. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
